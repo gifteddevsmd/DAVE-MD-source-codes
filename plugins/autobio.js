@@ -1,4 +1,4 @@
-*/let handler = m => m;
+/*let handler = m => m;
 
 handler.all = async function (m) {
     let setting = global.db.data.settings[this.user.jid] || {};
@@ -32,5 +32,5 @@ function clockString(ms) {
     let m = Math.floor(ms / 60000) % 60;
 
     return `${d} Day(s) ${h} Hour(s) ${m} Minute(s)`;
-}/*
+}*/
 
