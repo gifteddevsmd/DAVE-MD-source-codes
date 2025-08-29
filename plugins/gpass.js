@@ -47,7 +47,7 @@ davlo({
     };
     const _0x51f475 = _0x571dd4(_0x1fe8bf);
     await _0x1f40d4.sendMessage(_0x329458, {
-      'text': "🔐 *Your Strong Password* 🔐\n\nPlease find your generated password below:\n\n *𝒮𝒾𝓁𝓋𝒶 𝒮𝓅𝒶𝓇𝓀 𝑀𝒟*"
+      'text': "🔐 *Your Strong Password* 🔐\n\nPlease find your generated password below:\n\n *𝐃𝐀𝐕𝐄-𝐗𝐌𝐃*"
     }, {
       'quoted': _0x2b6900
     });
@@ -58,6 +58,6 @@ davlo({
     });
   } catch (_0x1ad7bb) {
     console.log(_0x1ad7bb);
-    _0x1bb557("❌𝒮𝒾𝓁𝓋𝒶 𝒮𝓅𝒶𝓇𝓀 𝑀𝒟 Error generating password🤕: " + _0x1ad7bb.message);
+    _0x1bb557("❌𝐃𝐀𝐕𝐄-𝐗𝐌𝐃 Error generating password🤕: " + _0x1ad7bb.message);
   }
 });
