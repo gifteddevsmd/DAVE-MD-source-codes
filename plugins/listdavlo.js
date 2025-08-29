@@ -297,7 +297,7 @@ async (dave, mek, m, { from, quoted, body, isCmd, davlo, args, q, isGroup, sende
         await dave.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/0vldgh.jpeg` },
+                image: { url: `https://i.ibb.co/8gxpXvDk/temp-image.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
