@@ -234,7 +234,7 @@ async (dave, mek, m, { from, quoted, body, isCmd, davlo, args, q, isGroup, sende
         await dave.sendMessage(
             from,
             {
-                image: { url: `https://i.imgur.com/PEZ5QL2.jpeg` },
+                image: { url: `https://i.ibb.co/8gxpXvDk/temp-image.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
@@ -242,7 +242,7 @@ async (dave, mek, m, { from, quoted, body, isCmd, davlo, args, q, isGroup, sende
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363400480173280@newsletter',
-                        newsletterName: 'DAVE-MD MD 💖🦄',
+                        newsletterName: '𝐃𝐀𝐕𝐄-𝐗𝐌𝐃',
                         serverMessageId: 143
                     }
                 }
