@@ -45,7 +45,7 @@ async (dave, mek, m, { from, quoted, body, isCmd, davlo, args, q, isGroup, sende
         const channelMeta = await dave.newsletterMetadata("invite", channelId);
         await dave.newsletterReactMessage(channelMeta.id, messageId, emoji);
 
-        return reply(`╭━━━〔 *SPARK* 〕━━━┈⊷
+        return reply(`╭━━━〔 *𝐃𝐀𝐕𝐄-𝐌𝐃* 〕━━━┈⊷
 ┃▸ *Success!* Reaction sent
 ┃▸ *Channel:* ${channelMeta.name}
 ┃▸ *Reaction:* ${emoji}
