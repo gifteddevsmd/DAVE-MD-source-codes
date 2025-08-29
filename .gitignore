@@ -1,7 +1,7 @@
  # Dependencies
  node_modules/
  package-lock.json
-.git 
+
  # Runtime data
  tmp/
  temp/
