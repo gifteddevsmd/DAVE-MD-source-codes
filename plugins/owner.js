@@ -30,26 +30,26 @@ END:VCARD`;
 
     // Send Image with Caption
     await dave.sendMessage(from, {
-      image: { url: 'https://files.catbox.moe/0vldgh.jpeg' },
+      image: { url: 'https://i.ibb.co/8gxpXvDk/temp-image.jpg' },
       caption: 
-`╭━━〔 *⎈ Sɪʟᴠᴀ Ｓᴘᴀʀᴋ мᎠ ⎈* 〕━━┈⊷
+`╭━━〔 *𝐃𝐀𝐕𝐄-𝐗𝐌𝐃* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• *Owner Name:* ${ownerName}
 ┃◈┃• *Phone:* ${ownerNumber}
 ┃◈┃• *Bot Version:* 2.0.1
-┃◈┃• *Team:* Silva Developers 💖
+┃◈┃• *Team:*  DAVE-TECH
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-📣 _Reach out for support, updates, or collabs!_
+💚 _Reach out for support, updates, or collabs!_
 
-> 🔐 *Powered by DAVE-MD MD*`,
+> 💚 *Powered by DAVE-MD*`,
       contextInfo: {
         mentionedJid: [`${ownerNumber.replace('+', '')}@s.whatsapp.net`],
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363400480173280@newsletter',
-          newsletterName: 'SILVA DEVELOPERS🥰💖🥰',
+          newsletterName: '𝐃𝐀𝐕𝐄-𝐗𝐌𝐃',
           serverMessageId: 143
         }
       }
