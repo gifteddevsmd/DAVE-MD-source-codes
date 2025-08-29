@@ -24,7 +24,7 @@ try {
     // Validate download URL
     if(!ytdl?.download?.url) return reply("Error fetching audio URL");
     
-    let ytmsg = `╭━━━〔 *DAVE-MD MD* 〕━━━┈⊷
+    let ytmsg = `╭━━━〔 *DAVE-MD* 〕━━━┈⊷
 ┃▸┃๏ *MUSIC DOWNLOADER*
 ╭━━❐━⪼
 ┇๏ *Title* -  ${yts.title}
