@@ -40,7 +40,7 @@ async (dave, mek, m, { from, isGroup, mentionByTag, quoted, sender, reply }) => 
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363400480173280@newsletter',
-                    newsletterName: 'DAVE-MD MD',
+                    newsletterName: '𝐃𝐀𝐕𝐄-𝐗𝐌𝐃',
                     serverMessageId: 101
                 }
             }
