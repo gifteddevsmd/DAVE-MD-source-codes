@@ -20,13 +20,13 @@ davlo({
     alias: ["sc", "script", "info"],
     desc: "📦 Show full repo & runtime stats",
     category: "main",
-    react: "🧑‍💻",
+    react: "💚",
     filename: __filename
 }, 
 async (dave, mek, m, { from, reply }) => {
     try {
-        const repoUrl = 'https://api.github.com/repos/SilvaTechB/dev-md-bot';
-        const { data } = await axios.get(repoUrl, { timeout: 8000 }); // timeout added
+        const repoUrl = 'https://api.github.com/repos/giftdee/DAVE-MD';
+        const { data } = await axios.get(repoUrl, { timeout: 8000 });
 
         const { stargazers_count, forks_count } = data;
         const estUsers = (stargazers_count + forks_count) * 5;
@@ -35,23 +35,23 @@ async (dave, mek, m, { from, reply }) => {
         const platform = os.platform().toUpperCase();
         const arch = os.arch().toUpperCase();
 
-        // Optional: Count davlo files directly
+        // Count plugins
         const commandFiles = fs.readdirSync('./plugins').filter(file => file.endsWith('.js')).length;
 
         const msg = `
-╭━━〔 *⎈ DAVE-MD MD Runtime Info* 〕━━⊷
+╭━━〔 *⎈ 𝐃𝐀𝐕𝐄-𝐌𝐃 Runtime Info* 〕━━⊷
 ┃
-┃ 🧠 *Project:* DAVE-MD MD
-┃ 🔗 *Repo:* https://github.com/SilvaTechB/DAVE-MD
-┃ ⭐ Stars: ${stargazers_count}
-┃ 🍴 Forks: ${forks_count}
-┃ 👥 Estimated Users: ${estUsers}
-┃ 🛠 Version: v${version}
-┃ 💡 Commands Loaded: ${commandFiles}
-┃ 🕒 Uptime: ${uptime}
-┃ 💻 System: ${platform} (${arch})
+┃ 💚 *Project:* 𝐃𝐀𝐕𝐄-𝐌𝐃
+┃ 💚 *Repo:* https://github.com/giftdee/DAVE-MD
+┃ 💚 Stars: ${stargazers_count}
+┃ 💚 Forks: ${forks_count}
+┃ 💚 Estimated Users: ${estUsers}
+┃ 💚 Version: v${version}
+┃ 💚 Commands Loaded: ${commandFiles}
+┃ 💚 Uptime: ${uptime}
+┃ 💚 System: ${platform} (${arch})
 ┃
-╰━━━⊷ *© SilvaTech Inc 2025*`.trim();
+╰━━━⊷ *© 𝐃𝐀𝐕𝐄-𝐌𝐃 2025*`.trim();
 
         const contextInfo = {
             forwardingScore: 999,
@@ -59,7 +59,7 @@ async (dave, mek, m, { from, reply }) => {
             mentionedJid: [m.sender],
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363400480173280@newsletter',
-                newsletterName: 'DAVE-MD MD 💖🦄',
+                newsletterName: '𝐃𝐀𝐕𝐄-𝐌𝐃',
                 serverMessageId: 143
             }
         };
@@ -69,8 +69,8 @@ async (dave, mek, m, { from, reply }) => {
 
         // Send fancy image
         await dave.sendMessage(from, {
-            image: { url: 'https://files.catbox.moe/0vldgh.jpeg' },
-            caption: `✨ *DAVE-MD MD: Powering Smart Chats!* ✨\n\n📎 *Repo:* github.com/SilvaTechB/dev-md-bot\n⭐ Stars: ${stargazers_count}\n🍴 Forks: ${forks_count}\n👥 Users: ${estUsers}`,
+            image: { url: 'https://i.ibb.co/8gxpXvDk/temp-image.jpg' },
+            caption: `✨ *𝐃𝐀𝐕𝐄-𝐌𝐃: Powering Smart Chats!* ✨\n\n📎 *Repo:* github.com/giftdee/DAVE-MD\n⭐ Stars: ${stargazers_count}\n🍴 Forks: ${forks_count}\n👥 Users: ${estUsers}`,
             contextInfo
         }, { quoted: mek });
 
