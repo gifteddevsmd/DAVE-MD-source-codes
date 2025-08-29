@@ -1,4 +1,4 @@
-const config = require('../config')
+/*const config = require('../config')
 const { davlo, commands } = require('../davlo')
 const { getAnti, setAnti, initializeAntiDeleteSettings } = require('../data/antidel');
 
@@ -79,4 +79,4 @@ async (dave, mek, m, { from, reply, q, isOwner }) => {
         console.error("❌ AntiDelete Error:", e);
         return reply("❌ 𝐃𝐀𝐕𝐄-𝐌𝐃: An error occurred while toggling AntiDelete settings.");
     }
-});
+});*/
