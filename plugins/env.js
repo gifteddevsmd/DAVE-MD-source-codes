@@ -1,30 +1,26 @@
 const config = require('../config');
-const { davlo, commands } = require('../davlo');
-const { runtime } = require('../lib/functions');
+const { davlo } = require('../davlo');
 const axios = require('axios');
 
 function isEnabled(value) {
-    // Function to check if a value represents a "true" boolean state
     return value && value.toString().toLowerCase() === "true";
 }
 
 davlo({
     pattern: "env",
     alias: ["setting", "allvar"],
-    desc: "Settings of bot",
+    desc: "Settings of 𝐃𝐀𝐕𝐄-𝐌𝐃",
     category: "menu",
     react: "⤵️",
     filename: __filename
-}, 
-async (dave, mek, m, { from, quoted, reply }) => {
+}, async (dave, mek, m, { from, reply }) => {
     try {
-        // Define the settings message with the correct boolean checks
-        let envSettings = `╭〔 *【ＳＩＬＶＡ】💥ＳＰＡＲＫ💥【ＭＤ】* 〕⊷
+        let envSettings = `╭〔 *𝐃𝐀𝐕𝐄-𝐌𝐃* 〕⊷
 ┃▸╭───────────
 ┃▸┃๏ *ENV SETTINGS 🗿*
 ┃▸└───────────···๏
 ╰────────────────┈⊷
-╭━━〔 *Enabled Disabled* 〕━━┈⊷
+╭━━〔 *Enabled / Disabled* 〕━━┈⊷
 ┇๏ *Auto Read Status:* ${isEnabled(config.AUTO_STATUS_SEEN) ? "Enabled ✅" : "Disabled ❌"}
 ┇๏ *Auto Reply Status:* ${isEnabled(config.AUTO_STATUS_REPLY) ? "Enabled ✅" : "Disabled ❌"}
 ┇๏ *Auto Reply:* ${isEnabled(config.AUTO_REPLY) ? "Enabled ✅" : "Disabled ❌"}
@@ -44,29 +40,25 @@ async (dave, mek, m, { from, quoted, reply }) => {
 ╰━━━━━━━━━━━━──┈⊷
 > ${config.DESCRIPTION}`;
 
-        // Send message with an image
-        await dave.sendMessage(
-            from,
-            {
-                image: { url: 'https://files.catbox.moe/0vldgh.jpeg' }, // Image URL
-                caption: envSettings,
-                contextInfo: {
-                    mentionedJid: [m.sender],
-                    forwardingScore: 999,
-                    isForwarded: true,
-                    forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363400480173280@newsletter',
-                        newsletterName: "THE DAVE-MD 🥰",
-                        serverMessageId: 143
-                    }
-                }
-            },
-            { quoted: mek }
-        );
-
-        // Send an audio file
+        // Send the rebranded image
         await dave.sendMessage(from, {
-            audio: { url: 'https://github.com/JawadYTX/KHAN-DATA/raw/refs/heads/main/autovoice/sigma.m4a' }, // Audio URL
+            image: { url: 'https://i.ibb.co/8gxpXvDk/temp-image.jpg' }, // New image URL
+            caption: envSettings,
+            contextInfo: {
+                mentionedJid: [m.sender],
+                forwardingScore: 999,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: '120363400480173280@newsletter',
+                    newsletterName: "𝐃𝐀𝐕𝐄-𝐗𝐌𝐃",
+                    serverMessageId: 143
+                }
+            }
+        }, { quoted: mek });
+
+        // Optional: Send audio if you want (keep original or update URL)
+        await dave.sendMessage(from, {
+            audio: { url: 'https://github.com/JawadYTX/KHAN-DATA/raw/refs/heads/main/autovoice/sigma.m4a' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
