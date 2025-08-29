@@ -1,6 +1,6 @@
 {
   "name": "DAVE-MD",
-  "description": "Javascript WhatsApp bot made by Silva.",
+  "description": "A node.js Whatsapp bot made by Dave.",
   "keywords": ["DAVE-MD"],
   "success_url": "/",
 
@@ -15,13 +15,13 @@
     "ALIVE_IMG": {
       "description": "paste your image url if you don't have you can use this public url.",
       "required": false,
-      "value": "https://i.ibb.co/BVt9McxS/photo-2025-06-15-12-14-29-7516148628621099032.jpg"
+      "value": "https://i.ibb.co/8gxpXvDk/temp-image.jpg"
     }, 
     
     "LIVE_MSG": {
       "description": "paste your alive message hear.",
       "required": false,
-      "value": "> DAVE-MD IS SPARKING ACTIVE AND ALIVE⚡"
+      "value": "> 𝐃𝐀𝐕𝐄-𝐌𝐃 is Active ✊"
     },
     "ANTIDELETE_PRIVATE": {
       "description": "when someone deletes a message on dm the bot restores it.",
@@ -94,13 +94,13 @@
     "AUTO_STATUS__MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*🎉👀 Seen by DAVE-MD MD 🚀🔥*"
+      "value": "*seen by me💚*"
     }, 
 
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
       "required": false,
-      "value": "DAVE-MD"
+      "value": "Dave"
 }, 
 
     "OWNER_NUMBER": {
@@ -113,7 +113,7 @@
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "✦ 𝐃𝐀𝐕𝐄-𝐌𝐃"
+      "value": "✦𝐃𝐀𝐕𝐄-𝐌𝐃✦"
 
       }, 
 
@@ -133,7 +133,7 @@
      "DESCRIPTION": {
       "description": "add caption for menu and other",
       "required": false,
-      "value": "*© ✦ 𝐃𝐀𝐕𝐄-𝐌𝐃*"
+      "value": "*©✦𝐃𝐀𝐕𝐄-𝐌𝐃✦*"
     },
 
       "DELETE_LINKS": {
