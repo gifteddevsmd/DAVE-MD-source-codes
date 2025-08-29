@@ -46,7 +46,7 @@ async (dave, mek, m, { from, body, isOwner }) => {
             
             if (config.AUTO_STICKER === 'true') {
                 //if (isOwner) return;        
-                await dave.sendMessage(from,{sticker: { url : data[text]},package: 'DAVE-MD🥰'},{ quoted: mek })   
+                await dave.sendMessage(from,{sticker: { url : data[text]},package: 'DAVE-MD'},{ quoted: mek })   
             
             }
         }
