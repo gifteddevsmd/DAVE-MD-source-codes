@@ -63,7 +63,7 @@ davlo({
     _0x515443("Open time " + _0x29755d + " starting from now");
     setTimeout(() => {
       _0x34b3eb.groupSettingUpdate(_0x1979f2, "not_announcement");
-      _0x515443("> *NOW GROUP IS OPENED BY SPARK DE SILVA BOT*");
+      _0x515443("> *NOW GROUP IS OPENED BY 𝐃𝐀𝐕𝐄-𝐌𝐃*");
     }, _0x57d309);
     await _0x34b3eb.sendMessage(_0x1979f2, {
       'react': {
@@ -136,7 +136,7 @@ davlo({
     _0x5c514e("Close time " + _0x490959 + " starting from now");
     setTimeout(() => {
       _0x33bbc7.groupSettingUpdate(_0x152d4d, "announcement");
-      _0x5c514e("> *NOW GROUP CLOSED BY DAVE-MD MD*");
+      _0x5c514e("> *NOW GROUP CLOSED BY DAVE-MD*");
     }, _0x4b2fe4);
     await _0x33bbc7.sendMessage(_0x152d4d, {
       'react': {
@@ -184,7 +184,7 @@ davlo({
 }) => {
   try {
     if (!_0x3fcba9) {
-      return _0x35f506("This davlo is only for groups.");
+      return _0x35f506("This command is only for groups.");
     }
     if (!_0x575128) {
       return _0x35f506("Yah Command Srf Admins Ky Lya Hai !.");
@@ -252,7 +252,7 @@ davlo({
     }
     await _0x188ee4.groupSettingUpdate(_0x5a0744.chat, "announcement");
     const _0x23264b = await _0x188ee4.sendMessage(_0x5a0744.chat, {
-      'text': "*GROUP CHAT MUTED BY DAVE-MD MD* 🔒"
+      'text': "*GROUP CHAT MUTED BY DAVE-MD* 🔒"
     }, {
       'quoted': _0x2926d7
     });
@@ -312,7 +312,7 @@ davlo({
     }
     await _0x298fe1.groupSettingUpdate(_0x2602ac.chat, "not_announcement");
     const _0x74b371 = await _0x298fe1.sendMessage(_0x2602ac.chat, {
-      'text': "*GROUP CHAT UNMUTED BY SPARK DE SILVA BOT* 🔒"
+      'text': "*GROUP CHAT UNMUTED BY 𝐃𝐀𝐕𝐄-𝐗𝐌𝐃* 🔒"
     }, {
       'quoted': _0x116d41
     });
@@ -361,7 +361,7 @@ davlo({
 }) => {
   try {
     if (!_0x56566a.isGroup) {
-      return _0x227b1d("This davlo is only for groups.");
+      return _0x227b1d("This command is only for groups.");
     }
     if (!_0x33dfec) {
       return _0x227b1d("I need admin privileges to add users.");
@@ -409,13 +409,13 @@ davlo({
 }) => {
   try {
     if (!_0xb2710d) {
-      return _0x4beca6("This davlo can only be used in a group.");
+      return _0x4beca6("This command can only be used in a group.");
     }
     if (!_0xf475c2) {
-      return _0x4beca6("Bot must be an admin to use this davlo.");
+      return _0x4beca6("Bot must be an admin to use this command.");
     }
     if (!_0x533cde) {
-      return _0x4beca6("You must be an admin to use this davlo.");
+      return _0x4beca6("You must be an admin to use this command.");
     }
     if (!_0x5ebbc8) {
       return _0x4beca6("Please provide a goodbye message.");
@@ -464,13 +464,13 @@ davlo({
 }) => {
   try {
     if (!_0x519fe5) {
-      return _0x4c430b("This davlo can only be used in a group.");
+      return _0x4c430b("This command can only be used in a group.");
     }
     if (!_0x12d593) {
-      return _0x4c430b("Bot must be an admin to use this davlo.");
+      return _0x4c430b("Bot must be an admin to use this command.");
     }
     if (!_0x35af97) {
-      return _0x4c430b("You must be an admin to use this davlo.");
+      return _0x4c430b("You must be an admin to use this command.");
     }
     if (!_0xd0a608) {
       return _0x4c430b("Please provide a welcome message.");
