@@ -1,19 +1,22 @@
 const { davlo } = require("../davlo");
 
 davlo({
-  pattern: "vv2",
-  alias: ["wah", "ohh", "oho", "🙂", "nice", "ok"],
+  pattern: "vv",
+  alias: ["viewonce", 'retrive'],
+  react: '🐳',
   desc: "Owner Only - retrieve quoted message back to user",
   category: "owner",
   filename: __filename
-}, async (client, message, match, { from, isCreator }) => {
+}, async (dave, message, match, { from, isCreator }) => {
   try {
     if (!isCreator) {
-      return; // Simply return without any response if not owner
+      return await dave.sendMessage(from, {
+        text: "*💠 This is an owner davlo.*"
+      }, { quoted: message });
     }
 
     if (!match.quoted) {
-      return await client.sendMessage(from, {
+      return await dave.sendMessage(from, {
         text: "*💠 Please reply to a view once message!*"
       }, { quoted: message });
     }
@@ -46,16 +49,15 @@ davlo({
         };
         break;
       default:
-        return await client.sendMessage(from, {
+        return await dave.sendMessage(from, {
           text: "❌ Only image, video, and audio messages are supported"
         }, { quoted: message });
     }
 
-    // Forward to user's DM
-    await client.sendMessage(message.sender, messageContent, options);
+    await dave.sendMessage(from, messageContent, options);
   } catch (error) {
     console.error("vv Error:", error);
-    await client.sendMessage(from, {
+    await dave.sendMessage(from, {
       text: "❌ Error fetching vv message:\n" + error.message
     }, { quoted: message });
   }
