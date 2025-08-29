@@ -19,18 +19,18 @@ davlo({
     const up = runtime(process.uptime());
 
     const caption = `
-╭━━〔 ✦ 𝑺𝑰𝑳𝑽𝑨 𝑺𝑷𝑨𝑹𝑲 𝑴𝑫 ✦ 〕━━╮
+╭━━〔 ✦ 𝐃𝐀𝐕𝐄-𝐌𝐃 ✦ 〕━━╮
 ┃ ⚙️ *Bot Status Report* ⚙️
 ┃
-┃ 🧬 *Version:* ${pkg.version}
-┃ ⏱ *Uptime:* ${up}
-┃ 🧠 *Memory:* ${usedMemMB} MB / ${totalMemGB} GB
-┃ 🖥 *Host:* ${os.hostname()}
-┃ 👑 *Owner:* ${global?.config?.OWNER_NAME || "SPARK"}
-┃ 💖 *Framework:* DAVE-MD MD
+┃ 💚 *Version:* ${pkg.version}
+┃ 💚 *Uptime:* ${up}
+┃ 💚 *Memory:* ${usedMemMB} MB / ${totalMemGB} GB
+┃ 💚 *Host:* ${os.hostname()}
+┃ 💚 *Owner:* ${global?.config?.OWNER_NAME || "SPARK"}
+┃ 💚 *Framework:* 𝐃𝐀𝐕𝐄-𝐌𝐃
 ┃
 ╰━━━━━━━━━━━━━━━━━━━━╯
-🔗 Stay Powered • Stay Sparked
+🔗 Stay Powered • Stay connected
 `;
 
     await dave.sendMessage(from, {
@@ -43,7 +43,7 @@ davlo({
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363400480173280@newsletter',
-          newsletterName: 'DAVE-MD 💖',
+          newsletterName: '𝐃𝐀𝐕𝐄-𝐗𝐌𝐃',
           serverMessageId: 143
         }
       }
