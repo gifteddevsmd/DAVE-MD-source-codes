@@ -102,7 +102,7 @@ async (dave, mek, m, { from, q, reply }) => {
 
 ${joke.punchline} 😄
 
-> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ SILVA*`;
+> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝐃𝐀𝐕𝐄-𝐗𝐌𝐃*`;
 
         return reply(jokeMessage);
     } catch (e) {
@@ -244,7 +244,7 @@ async (dave, mek, m, { from, isGroup, text, reply }) => {
     try {
         // Ensure the davlo is used in a group
         if (!isGroup) {
-            return reply("This davlo can only be used in groups.");
+            return reply("This command can only be used in groups.");
         }
 
         // Extract the mentioned user
@@ -289,6 +289,6 @@ async (dave, mek, m, { from, isGroup, text, reply }) => {
 
     } catch (e) {
         console.error("Error in character davlo:", e);
-        reply("An error occurred while processing the davlo. Please try again.");
+        reply("An error occurred while processing the command. Please try again.");
     }
 });
