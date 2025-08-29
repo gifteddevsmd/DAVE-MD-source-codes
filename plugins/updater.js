@@ -11,7 +11,7 @@ davlo({
     filename: __filename,
 }, async (dave, mek, m, { from, reply }) => {
     try {
-        const repoUrl = 'https://github.com/SilvaTechB/DAVE-MD.git'; // GitHub repository URL
+        const repoUrl = 'https://github.com/giftdee/DAVE-MD.git'; // GitHub repository URL
         const targetFolder = 'plugins'; // Local folder for the repo
 
         // Ensure the target folder exists
