@@ -35,4 +35,4 @@ async (dave, mek, m, { from, quoted, body, isCmd, davlo, args, q, isGroup, sende
     }
 });
 
-// 𝘚𝘪𝘭𝘷𝘢 𝘚𝘱𝘢𝘳𝘬 𝘔𝘋
+// 𝐃𝐀𝐕𝐄-𝐗𝐌𝐃
