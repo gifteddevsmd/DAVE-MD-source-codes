@@ -14,7 +14,7 @@ async (dave, mek, m, { from, quoted, body, isCmd, davlo, args, q, isGroup, sende
         const response = await axios.get(apiUrl);
         const data = response.data;
 
-        await dave.sendMessage(from, { image: { url: data.message }, caption: '> *© 𝕊𝕚𝕝𝕧𝕒 𝕊𝕡𝕒𝕣𝕜 𝕄𝔻 ' }, { quoted: mek });
+        await dave.sendMessage(from, { image: { url: data.message }, caption: '> *© 𝐃𝐀𝐕𝐄-𝐌𝐃 ' }, { quoted: mek });
     } catch (e) {
         console.log(e); // ❯❯ 𝐃𝐀𝐕𝐄-𝐌𝐃
         reply(`єяяσя ƒєт¢нιηg ∂σg ιмαgє: ${e.message}`);
