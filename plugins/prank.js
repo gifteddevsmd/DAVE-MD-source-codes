@@ -11,7 +11,7 @@ async (dave, mek, m, { from, reply }) => {
   try {
     const steps = [
       '🧠 *Initializing SilvaCore Intelligence...*',
-      '💻 *DAVE-MD MD – HackSim Engine v4.0*',
+      '💻 *𝐃𝐀𝐕𝐄-𝐌𝐃 – HackSim Engine v4.0*',
       '',
       '🔐 *Bypassing Multi-Layered Encryption...*',
       '🌐 *Connecting to Quantum Secure Network...*',
@@ -35,7 +35,7 @@ async (dave, mek, m, { from, reply }) => {
       '⚠️ _This is a simulation. No systems were harmed._',
       '🧠 _Stay ethical. Stay secure. Stay smart._',
       '',
-      '💡 *POWERED BY DAVE-MD MD* 🔥'
+      '💡 *POWERED BY 𝐃𝐀𝐕𝐄-𝐌𝐃* 🔥'
     ];
 
     for (const step of steps) {
