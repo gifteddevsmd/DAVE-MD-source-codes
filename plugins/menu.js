@@ -12,20 +12,19 @@ const emojis = ['✨', '⚡', '🌟', '💫', '🎀', '🧿', '💠', '🔮', '�
 const randomEmoji = () => emojis.sort(() => 0.5 - Math.random()).slice(0, 3).join('');
 const divider = (length = 20, char = '─') => char.repeat(length);
 
-// 🔁 Animated Video + Audio Sender
+// 🔁 Image + Optional Audio Sender
 async function sendMenu(dave, from, mek, sender, text, title, sendAudio = false) {
   try {
     await dave.sendMessage(from, {
-      video: { url: 'https://files.catbox.moe/2xxr9h.mp4' },
+      image: { url: 'https://i.ibb.co/8gxpXvDk/temp-image.jpg' }, // Replaced video with image
       caption: text,
-      gifPlayback: true,
       contextInfo: {
         mentionedJid: [sender],
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363400480173280@newsletter',
-          newsletterName: 'DAVE-MD MD 💖🦄',
+          newsletterName: '𝐃𝐀𝐕𝐄-𝐌𝐃 💖🦄',
           serverMessageId: 143
         }
       }
