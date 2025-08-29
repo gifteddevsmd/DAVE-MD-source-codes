@@ -31,7 +31,7 @@ davlo({
     const videoUrl = data.data.url;
     await dave.sendMessage(from, {
       video: { url: videoUrl },
-      caption: "📥 *Facebook Video Downloaded*\n\n- Powered By DAVE-MD 💥 ✅",
+      caption: "📥 *Facebook Video Downloaded*\n\n- Powered By DAVE-MD✊",
     }, { quoted: m });
 
   } catch (error) {
