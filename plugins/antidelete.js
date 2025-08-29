@@ -1,5 +1,5 @@
-const config = require("../config");
-const { davlo } = require('../davlo');
+const config = require('../config')
+const { davlo, commands } = require('../davlo')
 const { getAnti, setAnti, initializeAntiDeleteSettings } = require('../data/antidel');
 
 // Initialize anti-delete settings once
