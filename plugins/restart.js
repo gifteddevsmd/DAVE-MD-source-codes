@@ -14,7 +14,7 @@ async (dave, mek, m, {
         // Get the bot owner's number dynamically from dave.user.id
         const botOwner = dave.user.id.split(":")[0]; // Extract the bot owner's number
         if (senderNumber !== botOwner) {
-            return reply("Only the bot owner can use this davlo.");
+            return reply("Only the bot owner can use this command.");
         }
 
         const { exec } = require("child_process");
