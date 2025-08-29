@@ -65,7 +65,7 @@ davlo({
       `*${mediaType} Uploaded Successfully*\n\n` +
       `*Size:* ${formatBytes(mediaBuffer.length)}\n` +
       `*URL:* ${mediaUrl}\n\n` +
-      `> © Uploaded by SilvaTechInc EA Ltd`
+      `> © Uploaded by 𝐃𝐀𝐕𝐄-𝐌𝐃`
     );
 
   } catch (error) {
