@@ -38,7 +38,7 @@ davlo({
                 from,
                 {
                     image: { url: image.src },
-                    caption: `*🔎 Results for:* ${query}\n\n> *Powered by DAVE-MD MD ✨*`
+                    caption: `*🔎 Results for:* ${query}\n\n> *Powered by DAVE-MD💚*`
                 },
                 { quoted: mek }
             );
