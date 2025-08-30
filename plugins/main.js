@@ -19,12 +19,11 @@ const quotedContact = {
   },
   message: {
     contactMessage: {
-      displayName: " Menu-Frame | Verified ✅",
-      vcard: "BEGIN:VCARD\nVERSION:3.0\nFN:SCIFI\nORG:Shadow-Xtech BOT;\nTEL;type=CELL;type=VOICE;waid=254700000001:+254 700 000001\nEND:VCARD"
+      displayName: "Menu-Frame | Verified ✅",
+      vcard: "BEGIN:VCARD\nVERSION:3.0\nFN:𝐃𝐀𝐕𝐄-𝐌𝐃 BOT\nORG:DAVE-MD;\nTEL;type=CELL;type=VOICE;waid=2541111687009:+254111687009\nEND:VCARD"
     }
   }
 };
-
 const LOADING_MESSAGES = [
     "Initializing connection...",
     "Establishing Bot commands...",
