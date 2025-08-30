@@ -6,8 +6,8 @@ const axios = require('axios');
 const pkg = require('../package.json'); // Get version from package.json
 
 // Visual Elements
-const rainbow = ['💥', '💥'];
-const emojis = ['✨', '⚡', '🌟', '💫', '🎀', '🧿', '💠', '🔮', '🌈'];
+const rainbow = ['💥', '✊'];
+const emojis = ['✨', '💚'];
 
 const randomEmoji = () => emojis.sort(() => 0.5 - Math.random()).slice(0, 3).join('');
 const divider = (length = 20, char = '─') => char.repeat(length);
@@ -24,7 +24,7 @@ async function sendMenu(dave, from, mek, sender, text, title, sendAudio = false)
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363400480173280@newsletter',
-          newsletterName: '𝐃𝐀𝐕𝐄-𝐌𝐃 💖🦄',
+          newsletterName: '𝐃𝐀𝐕𝐄-𝐌𝐃',
           serverMessageId: 143
         }
       }
@@ -54,15 +54,15 @@ davlo({
   try {
     const menuText = `
 ╭━━━━━━━━━━━━━━━━━━━━╮
-  ✨ DAVE-MD MD ✨
+     💚𝐃𝐀𝐕𝐄-𝐌𝐃💚
 ╰━━━━━━━━━━━━━━━━━━━━╯
 
 ${rainbow.join('')} BOT INFORMATION ${rainbow.reverse().join('')}
-👑 Owner » ${config.OWNER_NAME}
-📱 Version » ${pkg.version}
-⚙️ Mode » ${config.MODE.toUpperCase()}
-🔣 Prefix » [${config.PREFIX}]
-⏳ Runtime » ${runtime(process.uptime())}
+💚 Owner » ${config.OWNER_NAME}
+💚 Version » ${pkg.version}
+💚 Mode » ${config.MODE.toUpperCase()}
+💚 Prefix » [${config.PREFIX}]
+💚 Runtime » ${runtime(process.uptime())}
 ${divider(30)}
 
 ${rainbow.join('')} COMMAND CATEGORIES ${rainbow.reverse().join('')}
